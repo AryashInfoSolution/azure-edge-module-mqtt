@@ -24,7 +24,7 @@ namespace mqtt
         static void Main(string[] args)
         {
             Init().Wait();
-
+            //
             // Wait until the app unloads or is cancelled
             var cts = new CancellationTokenSource();
             AssemblyLoadContext.Default.Unloading += (ctx) => cts.Cancel();
